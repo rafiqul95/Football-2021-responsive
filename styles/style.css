@@ -4,3 +4,84 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+a{
+    text-decoration: none;
+}
+
+
+/* ----------------------------
+          Header              
+------------------------------ */
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 43px;
+    position: relative;
+    z-index: 11;
+    align-items: center;
+}
+.navigation{
+    padding-left: 156px;
+    
+   
+}
+
+.navigation li{
+    list-style: none;
+    display: inline;
+    margin-right: 36px;
+
+}
+.navigation a{
+    color: white;
+}
+
+.login{
+    padding-right: 123px;
+}
+.login a,.btn{
+    padding: 10px 24px;
+    color: white;
+    background-color: #E02C6D;
+    box-shadow: 1px 1px 10px 2px rgb(51, 63, 235);
+}
+.login a i{
+    padding-right: 10px;
+}
+
+/* -------------------------------
+    banner section                
+---------------------------------- */
+.container{
+    width: 100%;
+    height: 677px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d25a0;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+}
+.banner-heading{
+    padding-left: 156px;
+    width: 485px;
+    height: 230px;
+}
+.banner-heading h1{
+    font-size: 64px;
+    font-weight: 700px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.banner-img img{
+    width: 556px;
+    height: 438px;
+    padding-right: 140px;
+}
+.banner-heading i{
+    padding-left: 10px;
+}
