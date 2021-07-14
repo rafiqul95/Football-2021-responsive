@@ -149,6 +149,9 @@ a{
 .highlight a{
     box-shadow: 1px 1px 10px 2px rgb(187, 187, 190);
 }
+.highlight a i{
+    margin-left: 0;
+}
 .highlight h2{
     font-size: 48px;
     font-weight: 700;
@@ -232,7 +235,9 @@ a{
         right: 10px;
         padding: 5px 20px;
     }
-    
+    .login a i{
+        margin-left: 10px;
+    }
     .navigation li{
         display: none;
     }
@@ -275,32 +280,54 @@ a{
         margin-left: 0px;
     }
     .highlight-container{
+        margin: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        margin: 100px 120px 100px 182px;
     }
     .highlight{
         width: 100%;
-    }
-    .highlight a{
-        box-shadow: 1px 1px 10px 2px rgb(187, 187, 190);
+
     }
     .highlight h2{
-        font-size: 48px;
-        font-weight: 700;
-        margin: 0px;
+        font-size: 32px;
+        text-align: center;
+        margin-top: 30px;
     }
-    .highlight-img{
-        width: 567px;
-        padding: 10px;
-        padding-top: 30px;
+    .highlight p{
+        padding: 5px 10px;
+    }
+    .highlight a i{
+        margin-left: 10px;
     }
     .highlight-img img{
-        width: 90%;
+        width: 80%;
+    }
+    .gallery-section{
+        margin-bottom: 50px;
+    }
+    .gallery-section h2{
+        font-size: 32px;
     }
     
+    .gallery{
+        margin: 0px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gallery img{
+        transition: none;
+       
+    }
+    .gallery img:hover{
+        transform: none;
+    }
+    .footer-section .logo img{
+        width: 300px;
+        height: 80px;
+    }
+
+
 }
 
 
