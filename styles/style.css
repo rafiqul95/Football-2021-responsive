@@ -3,6 +3,7 @@
 ----------------------------- */
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #FDFDFD;
 }
 a{
     text-decoration: none;
@@ -18,9 +19,10 @@ a{
     display: flex;
     justify-content: space-between;
     padding-top: 43px;
-    position: relative;
+    position: absolute;
     z-index: 11;
     align-items: center;
+    margin-bottom: 70px;
 }
 .navigation{
     padding-left: 156px;
@@ -61,7 +63,7 @@ a{
     justify-content: space-between;
     align-items: center;
     background-color: #2d25a0;
-    position: absolute;
+    position: relative;
     z-index: 10;
     top: 0;
 }
@@ -84,4 +86,32 @@ a{
 }
 .banner-heading i{
     padding-left: 10px;
+}
+/* -----------------------------
+        player album
+--------------------------------- */
+
+.players-album{
+    width: 1080px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    margin-top: 70px;
+    
+}
+.player{
+    margin: 15px 15px;
+    width: 330px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-img img{
+    width: 100%;
+}
+.player-info h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+.player-info p{
+    font-size: 16px;
 }
