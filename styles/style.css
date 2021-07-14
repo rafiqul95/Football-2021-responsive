@@ -23,11 +23,11 @@ a{
     z-index: 11;
     align-items: center;
     margin-bottom: 70px;
+    width: 100%;
 }
 .navigation{
     padding-left: 156px;
-    
-   
+    width: 100%;  
 }
 
 .navigation li{
@@ -52,6 +52,11 @@ a{
     background-color: #E02C6D;
     box-shadow: 1px 1px 10px 2px rgb(51, 63, 235);
 }
+.navbar .login a{
+    position: absolute;
+    right: 123px;
+    top: 50px;
+}
 .login a i{
     padding-right: 10px;
 }
@@ -74,6 +79,7 @@ a{
     padding-left: 156px;
     width: 485px;
     height: 230px;
+    
 }
 .banner-heading h1{
     font-size: 64px;
@@ -82,10 +88,15 @@ a{
     font-family: 'Poppins', sans-serif;
     
 }
+
 .banner-img img{
     width: 556px;
     height: 438px;
     padding-right: 140px;
+    transition: transform 1s ease-out ;
+}
+.banner-img img:hover{
+    transform: scale(1.5);
 }
 .banner-heading i{
     padding-left: 10px;
@@ -110,6 +121,10 @@ a{
 }
 .player-img img{
     width: 100%;
+    transition: transform 1s;
+}
+.player-img img:hover{
+    transform: scale(1.1);
 }
 .player-info h3{
     font-size: 28px;
@@ -118,6 +133,86 @@ a{
 .player-info p{
     font-size: 16px;
 }
+/* ----------------------------
+          Highlight section              
+------------------------------ */
+.highlight-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 100px 120px 100px 182px;
+}
+.highlight{
+    width: 466px;
+}
+.highlight a{
+    box-shadow: 1px 1px 10px 2px rgb(187, 187, 190);
+}
+.highlight h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0px;
+}
+.highlight-img{
+    width: 567px;
+    padding: 10px;
+    padding-top: 30px;
+}
+.highlight-img img{
+    width: 90%;
+}
+/* ----------------------------
+          gallery section            
+------------------------------ */
+.gallery-section{
+    
+    margin-bottom: 150px;
+    
+}
+
+.gallery-section h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.gallery{
+    width: 18%;
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 30px;
+    
+}
+.gallery img{
+    width: 100%;
+    box-shadow: 1px 1px 10px 2px rgb(187, 187, 190);
+    transition: transform 2s;    
+}
+.gallery img:hover{
+    transform: scale(3);
+}
+/* ----------------------------------
+        Footer section             
+------------------------------------- */
+.footer-section{
+    width: 485;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section .logo img{
+    width: 485px;
+    height: 110px;
+}
+.social-icons i{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.411);
+    border-radius: 20px;
+}
+
+
 /* ----------------------------------
         media queries             
 ------------------------------------- */
@@ -137,6 +232,7 @@ a{
         right: 10px;
         padding: 5px 20px;
     }
+    
     .navigation li{
         display: none;
     }
@@ -164,7 +260,10 @@ a{
     .banner-img img{
         width: 100%;
         height: 100%;
-
+        transition: transform 2s ease-in ;
+    }
+    .banner-img img:hover{
+        transform: scale(1.5);
     }
     .players-album{
         display: grid;
@@ -174,6 +273,32 @@ a{
     }
     .player{
         margin-left: 0px;
+    }
+    .highlight-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 100px 120px 100px 182px;
+    }
+    .highlight{
+        width: 100%;
+    }
+    .highlight a{
+        box-shadow: 1px 1px 10px 2px rgb(187, 187, 190);
+    }
+    .highlight h2{
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0px;
+    }
+    .highlight-img{
+        width: 567px;
+        padding: 10px;
+        padding-top: 30px;
+    }
+    .highlight-img img{
+        width: 90%;
     }
     
 }
@@ -219,7 +344,7 @@ a{
         font-weight: 500px;
         color: white;
         font-family: 'Poppins', sans-serif;
-        
+        margin-top: 80px;
     }
     .banner-img img{
         margin-top: 50px;
